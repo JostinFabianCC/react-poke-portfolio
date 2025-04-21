@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import heroImg from '@/assets/hero-pokemon.svg';
 export default function Hero() {
   return (
     <section className="relative w-full bg-gradient-to-b from-blue-50 to-white dark:from-zinc-800 dark:to-zinc-900 py-20 overflow-hidden">
@@ -21,7 +21,7 @@ export default function Hero() {
         </div>
 
         <img
-          src="/assets/hero-pokemon.svg"
+          src={heroImg}
           alt="Hero Pokémon illustration"
           className="mt-10 md:mt-0 w-72 md:w-96"
           loading="lazy"
